@@ -40,3 +40,15 @@
       </div>
     </div>
 </nav>
+
+{% block content %}
+    <h1>Favorites Products</h1>
+    <ul>
+        {% for fav in user.favorite %}
+        <li>
+            {{ fav.product }}
+        </li>
+        {% endfor %}
+    </ul>
+    <!-- <button>Untuk hapus</button>  -->
+{% endblock %}

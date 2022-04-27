@@ -29,10 +29,13 @@
                 <a class="nav-link" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Products</a>
+                <a class="nav-link" href="{{ url_for('views.product') }}">Products</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Favorite</a>
+                <a class="nav-link" href="{{ url_for('views.cake') }}">Cakes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('views.service') }}">Services</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Chat</a>
@@ -45,7 +48,13 @@
                 <a class="nav-link" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Products</a>
+                <a class="nav-link" href="{{ url_for('views.product') }}">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('views.cake') }}">Cakes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('views.service') }}">Services</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="{{ url_for('auth.login') }}">Login</a>
@@ -67,7 +76,7 @@
     <footer class="container-fluid py-5 bg-light" style="margin-top: 30px;">
       <div class="row">
         <div class="col-12 col-md">
-          <img class="img-fluid" src="">
+          <img class="img-fluid" src="../../static/main/logo.png">
           <small class="d-block mb-3 text-muted">&copy; 2020-2021</small>
         </div>
         <div class="col-6 col-md">
