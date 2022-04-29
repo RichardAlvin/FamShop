@@ -65,3 +65,7 @@
     font-weight: 400;
     margin-bottom: 30px;
 }
+
+.list-unstyled{
+    line-height: 40px;
+}
